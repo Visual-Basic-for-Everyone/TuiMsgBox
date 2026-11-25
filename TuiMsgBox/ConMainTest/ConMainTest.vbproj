@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ConMainTest</RootNamespace>
+    <TargetFramework>net10.0</TargetFramework>
+    <!-- Prevents duplicate Main entry points if a local Program.vb exists in this folder -->
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\ConsoleMessageBox.vb" Link="ConsoleMessageBox.vb" />
+    <Compile Include="..\MainTest.vb" Link="MainTest.vb" />
+  </ItemGroup>
+
+</Project>
+
